@@ -1,0 +1,125 @@
+@import url("style.css");
+
+/* ===== Обо мне ===== */
+
+/* В HTML заголовок и картинка лежат в <p> внутри <h1> */
+header h1 p {
+    margin: 0;
+}
+
+header h1 p + p {
+    margin-top: 24px;
+}
+
+/* Блок «Меня зовут Егор…» (у вас это <h3> с двумя <p>) */
+header h3 {
+    width: min(100%, 640px);
+    margin: 32px auto 20px;
+    padding: 22px 26px;
+    text-align: left;
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+header h3 p {
+    margin: 0 0 0.8em;
+}
+
+header h3 p:last-child {
+    margin-bottom: 0;
+}
+
+/* Строка «Я обучаюсь в МИИГАиК…» (у вас это <h2> с <p>) */
+header h2 {
+    max-width: 52ch;
+    margin: 0 auto;
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: var(--muted);
+    text-align: center;
+}
+
+header h2 p {
+    margin: 0;
+}
+
+/* Списки */
+.about {
+    margin-bottom: 1.2rem;
+}
+
+section ul {
+    margin: 0;
+    padding-left: 1.3em;
+}
+
+section li {
+    margin: 0.4em 0;
+}
+
+section li::marker {
+    color: var(--accent);
+}
+
+/* Таблицы: только тонкие горизонтальные линии */
+table {
+    width: min(100% - 32px, 860px);
+    margin: 32px auto 0;
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption {
+    padding-bottom: 12px;
+    text-align: left;
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--text);
+}
+
+th,
+td {
+    padding: 14px 16px;
+    border: 0;
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top;
+    overflow-wrap: anywhere;
+}
+
+thead th {
+    font-family: var(--font-head);
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--accent);
+    border-bottom-color: rgba(255, 201, 138, 0.4);
+}
+
+tbody tr:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+@media (max-width: 600px) {
+    header h3 {
+        padding: 18px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+}
+
+

@@ -1,0 +1,55 @@
+@import url("style.css");
+
+/* ===== Главная ===== */
+
+header p {
+    margin: 0.2em 0 0;
+    font-size: 1.05rem;
+}
+
+section h2 {
+    margin: 0 0 0.8rem;
+    font-size: 1.5rem;
+}
+
+article + article {
+    margin-top: 1.4rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--line);
+}
+
+article h3 {
+    margin: 0 0 0.2rem;
+    font-size: 1.2rem;
+}
+
+article p {
+    margin: 0.4rem 0 0;
+}
+
+time {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--accent);
+}
+
+footer {
+    margin-top: 64px;
+    padding: 36px 24px 44px;
+    text-align: center;
+    border-top: 1px solid var(--line);
+    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.35));
+}
+
+footer p {
+    margin: 0 0 0.6rem;
+    font-size: 0.95rem;
+}
+
+footer ul {
+    margin: 0 0 1rem;
+    padding: 0;
+    list-style: none;
+    font-size: 0.95rem;
+    color: var(--muted);
+}
